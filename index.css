@@ -1,0 +1,400 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 120px;
+  background-color: #fff;
+}
+
+.hp {
+  padding: 30px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hnav {
+  width: 630px;
+  height: 100%;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+  color: #141517;
+}
+
+li a:hover {
+  color: #ff2020;
+}
+
+.hnav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hnav ul li {
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.hnav ul li:hover ul {
+  width: 150px;
+  transform: 5s;
+  padding-left: 25px;
+  margin: auto;
+  border-top: 3px solid #ff2020;
+  border-radius: 10px;
+  top: 90px;
+  position: absolute;
+  display: table;
+  break-before: always;
+}
+.hnav ul li > ul {
+  display: none;
+}
+.hnav ul li > ul li {
+  padding: 10px;
+  background-color: white;
+}
+.hnav ul li > ul::before {
+  position: absolute;
+  top: -4px;
+  content: "";
+  display: inline-block;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #ff2020;
+  margin-right: 5px;
+  transform: translateY(-50%);
+}
+.hot {
+  position: relative;
+}
+.hot::before {
+  position: absolute;
+  content: "HOT";
+  background: #ff003c;
+  color: #fff;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 10px;
+  top: -18px;
+  right: -34px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  padding: 3px 8px;
+  font-weight: 500;
+}
+.hc {
+  display: flex;
+  width: 120px;
+  justify-content: space-between;
+}
+.hc i {
+  padding: 10px;
+}
+.hc i:hover {
+  color: #ff2020;
+}
+.sec1 {
+  display: flex;
+  justify-content: space-between;
+}
+.sec1 .orta1 h1 {
+  margin-bottom: 20px;
+  color: #0b1c39;
+  width: 750px;
+  font-size: 96px;
+}
+.sec1 .orta1 p {
+  font-size: 17px;
+  line-height: 1.6;
+  font-weight: 400;
+  margin-bottom: 60px;
+  width: 750px;
+  padding-right: 50px;
+}
+.orta1 a {
+  width: 155px;
+  transition: color 0.5s ease;
+  padding: 25px 29px;
+  display: inline-block;
+  background-color: #4a4a4b;
+  text-decoration: none;
+  color: #fff;
+  line-height: 0;
+  transition: 0.3s linear;
+}
+.orta1 a:hover {
+  transition-delay: 0.4s;
+  background-color: red;
+}
+.sec11 {
+  margin: auto;
+  display: flex;
+  width: 85%;
+  justify-content: space-between;
+}
+.orta1 {
+  margin-top: 300px;
+  margin-left: 50px;
+}
+.sec2 {
+  margin: auto;
+  width: 80%;
+}
+.sec2 .sec22 h1 {
+  margin-bottom: 100px;
+  display: block;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1;
+}
+.qutu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.sekil {
+  width: 360px;
+  height: 460px;
+  overflow: hidden;
+}
+.sec2 .sec22 .sekil img {
+  width: 100%;
+  transition: all 0.4s ease-out 0s;
+}
+.cardyazi h3 {
+  color: #444444;
+  font-weight: 700;
+  font-size: 24px;
+  padding-top: 19px;
+  text-align: center;
+}
+.cardyazi span {
+  padding-top: 10px;
+  color: #ff2020;
+  font-size: 18px;
+  font-weight: 500;
+  display: block;
+  text-align: center;
+}
+.sec3 {
+  width: auto;
+  padding-top: 250px;
+  display: flex;
+  justify-content: space-between;
+}
+.ortasekil1 .orta1 {
+  margin-bottom: 10px;
+  align-self: flex-start;
+  margin: 0px;
+}
+.ortasekil1 .orta1:hover {
+  transition: 1s;
+  opacity: 0.7;
+}
+.ortasekil2 .orta2:hover {
+  transition: 1s;
+  opacity: 0.7;
+}
+.ortasekil3 .orta3:hover {
+  transition: 1s;
+  opacity: 0.7;
+}
+.ortasekil3 .orta4:hover {
+  transition: 1s;
+  opacity: 0.7;
+}
+
+.orta2 {
+  margin: auto;
+  padding-top: 1px;
+  align-self: center;
+}
+.ortasekil3 {
+  padding-top: 1px;
+  display: flex;
+  flex-direction: column;
+}
+.ortasekil3 .orta4 {
+  padding-top: 30px;
+}
+.sec4 {
+  padding-top: 200px;
+  padding-bottom: 170px;
+  display: flex;
+  justify-content: space-around;
+}
+.sec44 {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: 20px;
+  margin-left: auto;
+}
+.sec44 h1 {
+  text-align: center;
+  font-size: 30px;
+}
+.sec44 p {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: #777;
+}
+.saatlar {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.saatlar h1 {
+  text-align: center;
+}
+.saatlar p {
+  text-align: center;
+}
+.img-cap span {
+  color: #fff;
+  background: #f81f1f;
+  padding: 30px 0;
+  flex-wrap: wrap;
+  display: block;
+  cursor: pointer;
+  text-align: center;
+}
+.product a {
+  color: white;
+  text-decoration: none;
+  list-style: none;
+  background: red;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 100px;
+  margin-left: 42%;
+  padding: 30px 28px;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.product a:hover {
+  transition: 0.5s;
+  background-color: grey;
+}
+.sec5 {
+  display: flex;
+}
+
+.sec6 {
+  display: flex;
+  justify-content: space-between;
+}
+.sec66 {
+  margin: 50px auto 50px;
+  display: flex;
+}
+.sec6 .sec66 h1 {
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+.sec66 .orta6 p {
+  font-size: 17px;
+  line-height: 1.6;
+  font-weight: 400;
+  margin-bottom: 60px;
+  width: 750px;
+  padding-right: 50px;
+}
+.sec66 img {
+  float: right;
+}
+.orta6 a {
+  width: 200px;
+  transition: color 0.5s ease;
+  padding: 25px 29px;
+  display: inline-block;
+  background-color: red;
+  text-decoration: none;
+  color: #fff;
+  line-height: 0;
+  transition: 0.3s linear;
+}
+.sec66 a:hover {
+  transition-delay: 0.4s;
+  background-color: grey;
+}
+.sec7 {
+  display: flex;
+  justify-content: space-around;
+}
+.sec77 {
+  display: flex;
+}
+.sec7 .sec77 h1 {
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+.sec77 .orta7 p {
+  font-size: 17px;
+  line-height: 1.6;
+  font-weight: 400;
+  margin-bottom: 60px;
+  width: 750px;
+  padding-right: 50px;
+}
+.sec77 img {
+  float: right;
+}
+.orta7 a {
+  width: 200px;
+  transition: color 0.5s ease;
+  padding: 25px 29px;
+  display: inline-block;
+  background-color: red;
+  text-decoration: none;
+  color: #fff;
+  line-height: 0;
+  transition: 0.3s linear;
+}
+.sec77 a:hover {
+  transition-delay: 0.4s;
+  background-color: grey;
+}
+.sec8 {
+  margin: auto;
+  border: 1px solid;
+  width: 75%;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  background-color: red;
+  color: white;
+}
+.sec8 .free {
+  margin: auto 50px;
+}
+.sec8 .secure {
+  margin: auto 50px;
+}
+.sec8 .secure1 {
+  margin: auto 50px;
+}
+.sec8 i {
+  font-size: 60px;
+}
+.sec8 h3 {
+  display: block;
+}
